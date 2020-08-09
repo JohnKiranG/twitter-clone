@@ -11,11 +11,16 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Button } from "@material-ui/core";
+import "./SidebarOption.css";
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <TwitterIcon className="sidebar__twitterIcon" />
+            
+      <div className="sidebarOption"> 
+        <TwitterIcon className="sidebar__twitterIcon" />
+        <h2>Twitter Clone <br/>John Kiran</h2>
+      </div>
 
       <SidebarOption active Icon={HomeIcon} text="Home" />
       <SidebarOption Icon={SearchIcon} text="Explore" />
